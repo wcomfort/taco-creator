@@ -1,0 +1,6 @@
+<h1>Welcome to Super Taco</h1>
+<% @tacos.each do |taco| %>
+<h3><%= link_to taco.name, taco_path(taco) %></h3>
+<% end %>
+
+<%= button_to "Create New Taco", new_taco_path, :method => "get" %>

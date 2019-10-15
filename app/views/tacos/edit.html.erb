@@ -1,0 +1,21 @@
+<h1>Edit a Taco!!</h1>
+
+<%= form_for (@taco) do |f| %>
+
+<label>Name:</label><br>
+<%= f.text_field :name %><br>
+
+<label>Tortilla:</label><br>
+<%= f.text_field :tortilla %><br>
+
+<label>Meat:</label><br>
+<%= f.text_field :meat %><br>
+
+<label>Salsa:</label>
+<%= f.text_field :salsa %><br>
+
+<label>Toppings:</label>
+<%= f.text_field :toppings %><br>
+
+<%= f.submit "Edit Taco" %>
+<% end %>

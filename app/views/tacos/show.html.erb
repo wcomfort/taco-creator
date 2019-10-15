@@ -1,0 +1,15 @@
+<h1><%= @taco.name %></h1><br>
+<ul>
+    <li><%= @taco.tortilla %></li>
+    <li><%= @taco.meat %></li>
+    <li><%= @taco.salsa %></li>
+    <li><%= @taco.toppings %></li>
+</ul>
+
+<%= button_to "Delete", @taco, :method => :delete %>
+
+<%= button_to "Edit Taco", edit_taco_path, :method => "get" %>
+
+<%= button_to "Home", tacos_path, :method => "get" %>
+
+

@@ -1,0 +1,20 @@
+<h1>Create a New Taco!!!</h1>
+
+<%= form_for (@taco) do |f| %>
+    <label>Name:</label><br>
+    <%= f.text_field :name %><br>
+
+    <label>Tortilla:</label><br>
+    <%= f.text_field :tortilla %><br>
+
+    <label>Meat:</label><br>
+    <%= f.text_field :meat %><br>
+
+    <label>Salsa:</label><br>
+    <%= f.text_field :salsa %><br>
+
+    <label>Toppings:</label><br>
+    <%= f.text_field :toppings %><br>
+
+    <%= f.submit "Create Deliciousness" %>
+<% end %>
